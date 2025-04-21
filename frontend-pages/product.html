@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Products - TechMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>TechMart</span>
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for medical products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-actions">
+                <a href="login.html" class="user-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Account</span>
+                </a>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                    <span>3</span>
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Medical Products</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Medical Products</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <div class="filter-card">
+                        <h3>Categories</h3>
+                        <div class="filter-group">
+                            <label>
+                                <input type="checkbox" checked> Prescription Drugs
+                            </label>
+                            <label>
+                                <input type="checkbox"> Over-the-Counter
+                            </label>
+                            <label>
+                                <input type="checkbox"> Vitamins & Supplements
+                            </label>
+                            <label>
+                                <input type="checkbox"> First Aid
+                            </label>
+                            <label>
+                                <input type="checkbox"> Medical Devices
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Price Range</h3>
+                        <div class="filter-group">
+                            <div class="price-range">
+                                <input type="text" placeholder="Min">
+                                <input type="text" placeholder="Max">
+                            </div>
+                            <div class="filter-buttons">
+                                <button class="btn btn-primary">Apply</button>
+                                <button class="btn btn-outline">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Brand</h3>
+                        <div class="filter-group">
+                            <label>
+                                <input type="checkbox"> Johnson & Johnson
+                            </label>
+                            <label>
+                                <input type="checkbox"> Pfizer
+                            </label>
+                            <label>
+                                <input type="checkbox"> Bayer
+                            </label>
+                            <label>
+                                <input type="checkbox"> Novartis
+                            </label>
+                            <label>
+                                <input type="checkbox"> GlaxoSmithKline
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Rating</h3>
+                        <div class="filter-group">
+                            <label>
+                                <input type="checkbox"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </label>
+                            <label>
+                                <input type="checkbox"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                            <label>
+                                <input type="checkbox"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                            <label>
+                                <input type="checkbox"> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Content -->
+                <div class="products-content">
+                    <div class="products-header">
+                        <div class="products-count">
+                            Showing 1-9 of 36 medical products
+                        </div>
+                        <div class="sort-options">
+                            <label>Sort by:</label>
+                            <select>
+                                <option>Popularity</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest First</option>
+                            </select>
+                        </div>
+                        <div class="view-options">
+                            <button class="view-btn active"><i class="fas fa-th"></i></button>
+                            <button class="view-btn"><i class="fas fa-list"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="products-grid">
+                        <!-- Product Card 1 -->
+                        <div class="product-card">
+                            <span class="product-badge bestseller">Bestseller</span>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Aspirin">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Pain Relief</div>
+                                <h3 class="product-title">Aspirin 325mg</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(120)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$9.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="product-card">
+                            <span class="product-badge discount">-20%</span>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Ibuprofen">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Pain Relief</div>
+                                <h3 class="product-title">Ibuprofen 200mg</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(85)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$7.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="product-card">
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Vitamin C">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Vitamins</div>
+                                <h3 class="product-title">Vitamin C 1000mg</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(42)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$12.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 4 -->
+                        <div class="product-card">
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Blood Pressure Monitor">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Medical Devices</div>
+                                <h3 class="product-title">Digital Blood Pressure Monitor</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(56)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$49.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 5 -->
+                        <div class="product-card">
+                            <span class="product-badge">New</span>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="First Aid Kit">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">First Aid</div>
+                                <h3 class="product-title">Comprehensive First Aid Kit</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(98)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$34.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 6 -->
+                        <div class="product-card">
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Allergy Medicine">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Allergy Relief</div>
+                                <h3 class="product-title">Cetirizine 10mg</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(74)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$14.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 7 -->
+                        <div class="product-card">
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Multivitamin">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Vitamins</div>
+                                <h3 class="product-title">Daily Multivitamin</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(63)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$19.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 8 -->
+                        <div class="product-card">
+                            <span class="product-badge discount">-15%</span>
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Thermometer">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Medical Devices</div>
+                                <h3 class="product-title">Digital Thermometer</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(112)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$12.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 9 -->
+                        <div class="product-card">
+                            <div class="product-wishlist">
+                                <button class="wishlist-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300" alt="Antacid">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-category">Digestive Health</div>
+                                <h3 class="product-title">Antacid Tablets</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(47)</span>
+                                </div>
+                                <div class="product-card-footer">
+                                    <div class="product-price">$8.99</div>
+                                    <button class="btn btn-primary add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="prev"><i class="fas fa-chevron-left"></i> Prev</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>TechMart</span>
+                    </div>
+                    <p>Your one-stop destination for all your medical needs. Quality products, competitive prices, and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Prescription Drugs</a></li>
+                        <li><a href="#">Over-the-Counter</a></li>
+                        <li><a href="#">Vitamins & Supplements</a></li>
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Medical Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Health Street, Medical District, CA 94043</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (123) 456-7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@techmart.com</span>
+                        </li>
+                    </ul>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechMart. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Returns Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

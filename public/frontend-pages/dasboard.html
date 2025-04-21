@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - TechMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>TechMart</span>
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-actions">
+                <a href="dashboard2.html" class="user-btn active">
+                    <i class="fas fa-user"></i>
+                    <span>My Account</span>
+                </a>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                    <span>3</span>
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- User Dashboard Section -->
+    <section class="user-dashboard">
+        <div class="container">
+            <div class="dashboard-container">
+                <!-- Dashboard Sidebar -->
+                <div class="user-sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">
+                            <img src="https://via.placeholder.com/80x80" alt="User Avatar">
+                        </div>
+                        <div class="user-info">
+                            <h3>John Smith</h3>
+                            <p>john.smith@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <nav class="user-nav">
+                        <ul>
+                            <li class="active">
+                                <a href="dashboard2.html">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>My Orders</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Addresses</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Payment Methods</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-user-edit"></i>
+                                    <span>Account Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Dashboard Content -->
+                <div class="user-dashboard-content">
+                    <div class="dashboard-welcome">
+                        <h1>Welcome back, John!</h1>
+                        <p>From your account dashboard, you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details.</p>
+                    </div>
+
+                    <!-- Dashboard Cards -->
+                    <div class="dashboard-cards">
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Orders</h3>
+                                <p>5 total orders</p>
+                                <a href="#" class="card-link">View Orders</a>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Wishlist</h3>
+                                <p>8 saved items</p>
+                                <a href="#" class="card-link">View Wishlist</a>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Addresses</h3>
+                                <p>2 saved addresses</p>
+                                <a href="#" class="card-link">Manage Addresses</a>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Payment Methods</h3>
+                                <p>3 saved cards</p>
+                                <a href="#" class="card-link">Manage Payments</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Orders -->
+                    <div class="recent-orders">
+                        <div class="section-header">
+                            <h2>Recent Orders</h2>
+                            <a href="#" class="view-all">View All Orders</a>
+                        </div>
+                        
+                        <div class="table-responsive">
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD-0123</td>
+                                        <td>Aug 15, 2023</td>
+                                        <td><span class="status-badge completed">Delivered</span></td>
+                                        <td>$29.99</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-0122</td>
+                                        <td>Aug 10, 2023</td>
+                                        <td><span class="status-badge processing">Processing</span></td>
+                                        <td>$49.99</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-0121</td>
+                                        <td>Aug 05, 2023</td>
+                                        <td><span class="status-badge shipped">Shipped</span></td>
+                                        <td>$12.99</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-0120</td>
+                                        <td>Jul 28, 2023</td>
+                                        <td><span class="status-badge completed">Delivered</span></td>
+                                        <td>$34.99</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-0119</td>
+                                        <td>Jul 20, 2023</td>
+                                        <td><span class="status-badge completed">Delivered</span></td>
+                                        <td>$19.99</td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-outline">View</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Wishlist Items -->
+                    <div class="wishlist-preview">
+                        <div class="section-header">
+                            <h2>Wishlist</h2>
+                            <a href="#" class="view-all">View All Items</a>
+                        </div>
+                        
+                        <div class="wishlist-items">
+                            <div class="wishlist-item">
+                                <div class="item-image">
+                                    <img src="https://via.placeholder.com/100x100" alt="Digital Blood Pressure Monitor">
+                                </div>
+                                <div class="item-details">
+                                    <h3>Digital Blood Pressure Monitor</h3>
+                                    <div class="item-price">$49.99</div>
+                                    <div class="item-status in-stock">In Stock</div>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <button class="btn btn-outline btn-sm">Remove</button>
+                                </div>
+                            </div>
+                            
+                            <div class="wishlist-item">
+                                <div class="item-image">
+                                    <img src="https://via.placeholder.com/100x100" alt="Vitamin C 1000mg">
+                                </div>
+                                <div class="item-details">
+                                    <h3>Vitamin C 1000mg</h3>
+                                    <div class="item-price">$12.99</div>
+                                    <div class="item-status in-stock">In Stock</div>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <button class="btn btn-outline btn-sm">Remove</button>
+                                </div>
+                            </div>
+                            
+                            <div class="wishlist-item">
+                                <div class="item-image">
+                                    <img src="https://via.placeholder.com/100x100" alt="First Aid Kit">
+                                </div>
+                                <div class="item-details">
+                                    <h3>Comprehensive First Aid Kit</h3>
+                                    <div class="item-price">$34.99</div>
+                                    <div class="item-status in-stock">In Stock</div>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn btn-primary btn-sm">Add to Cart</button>
+                                    <button class="btn btn-outline btn-sm">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Information -->
+                    <div class="account-info">
+                        <div class="section-header">
+                            <h2>Account Information</h2>
+                            <a href="#" class="edit-link">Edit</a>
+                        </div>
+                        
+                        <div class="account-info-content">
+                            <div class="info-column">
+                                <h3>Contact Information</h3>
+                                <p><strong>Name:</strong> John Smith</p>
+                                <p><strong>Email:</strong> john.smith@example.com</p>
+                                <p><strong>Phone:</strong> (123) 456-7890</p>
+                            </div>
+                            
+                            <div class="info-column">
+                                <h3>Default Billing Address</h3>
+                                <p>John Smith<br>
+                                123 Main Street<br>
+                                Apt 4B<br>
+                                New York, NY 10001<br>
+                                United States</p>
+                            </div>
+                            
+                            <div class="info-column">
+                                <h3>Default Shipping Address</h3>
+                                <p>John Smith<br>
+                                123 Main Street<br>
+                                Apt 4B<br>
+                                New York, NY 10001<br>
+                                United States</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>TechMart</span>
+                    </div>
+                    <p>Your one-stop destination for all your medical needs. Quality products, competitive prices, and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Prescription Drugs</a></li>
+                        <li><a href="#">Over-the-Counter</a></li>
+                        <li><a href="#">Vitamins & Supplements</a></li>
+                        <li><a href="#">First Aid</a></li>
+                        <li><a href="#">Medical Devices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Health Street, Medical District, CA 94043</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (123) 456-7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>support@techmart.com</span>
+                        </li>
+                    </ul>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 TechMart. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Returns Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

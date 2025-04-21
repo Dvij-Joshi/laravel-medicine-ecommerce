@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediShop - Online Pharmacy & Healthcare Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <span>MediShop</span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for medicines, health products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+                <a href="login.html" class="user-btn">
+                    <i class="fas fa-user"></i>
+                    <span>Account</span>
+                </a>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>0</span>
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Prescriptions</a></li>
+                    <li><a href="#">Health Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Health, Our Priority</h1>
+                <p>Get your medications delivered to your doorstep. Fast, reliable, and convenient.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    <a href="#" class="btn btn-outline">Upload Prescription</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://img.freepik.com/free-vector/pharmacy-medicine-concept-illustration_114360-7886.jpg" alt="Healthcare illustration">
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Delivery</h3>
+                    <p>On orders over $50</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>100% secure checkout</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Talk to our experts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Pain Relief</h3>
+                    <p>Medications for headaches, body pain, and fever</p>
+                    <a href="products.html" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Heart Health</h3>
+                    <p>Products for cardiovascular health and blood pressure</p>
+                    <a href="products.html" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Respiratory Care</h3>
+                    <p>Treatments for cough, cold, and respiratory conditions</p>
+                    <a href="products.html" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Vitamins & Supplements</h3>
+                    <p>Nutritional supplements for overall wellbeing</p>
+                    <a href="products.html" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" data-id="1">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/free-vector/realistic-white-pill-bottle-with-plastic-lid_1284-33655.jpg" alt="Pain Relief Medication">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Pain Relief</div>
+                        <h3 class="product-title">Pain Relief Medication</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-price">$19.99</div>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="1" data-name="Pain Relief Medication" data-price="19.99">
+                                <i class="fas fa-shopping-cart"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/free-vector/realistic-white-pill-bottle-with-plastic-lid_1284-33655.jpg" alt="Vitamin C Supplements">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Vitamins</div>
+                        <h3 class="product-title">Vitamin C Supplements</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-price">$24.99</div>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="2" data-name="Vitamin C Supplements" data-price="24.99">
+                                <i class="fas fa-shopping-cart"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge discount">15% Off</div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" data-id="3">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/free-vector/realistic-white-pill-bottle-with-plastic-lid_1284-33655.jpg" alt="Blood Pressure Monitor">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">Devices</div>
+                        <h3 class="product-title">Blood Pressure Monitor</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-price">$59.99</div>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="3" data-name="Blood Pressure Monitor" data-price="59.99">
+                                <i class="fas fa-shopping-cart"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn" data-id="4">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://img.freepik.com/free-vector/realistic-white-pill-bottle-with-plastic-lid_1284-33655.jpg" alt="First Aid Kit">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-category">First Aid</div>
+                        <h3 class="product-title">First Aid Kit</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(3.5)</span>
+                        </div>
+                        <div class="product-card-footer">
+                            <div class="product-price">$29.99</div>
+                            <button class="btn btn-primary add-to-cart-btn" data-id="4" data-name="First Aid Kit" data-price="29.99">
+                                <i class="fas fa-shopping-cart"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-outline">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="deals-section">
+        <div class="container">
+            <div class="deals-banner">
+                <div class="deals-content">
+                    <h2>Special Offers</h2>
+                    <p>Get up to 30% off on selected health products. Limited time offer!</p>
+                    <a href="products.html" class="btn btn-light">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I've been using MediShop for all my medication needs. Their delivery is always on time and the products are authentic. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The customer service is exceptional. When I had an issue with my order, they resolved it immediately. The prices are also very competitive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Brown</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I love the wide range of products available. It's convenient to get all my health and wellness products from one place. The app is also very user-friendly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Emily Davis">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Davis</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Health Tips & Articles</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg" alt="Importance of Vitamins">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">June 15, 2023</div>
+                        <h3>The Importance of Vitamins in Your Daily Diet</h3>
+                        <p>Learn about essential vitamins and how they contribute to your overall health and wellbeing.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg" alt="Managing Stress">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">June 10, 2023</div>
+                        <h3>5 Effective Ways to Manage Stress in Daily Life</h3>
+                        <p>Discover practical strategies to reduce stress and improve your mental health in today's busy world.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg" alt="Sleep Quality">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">June 5, 2023</div>
+                        <h3>How to Improve Your Sleep Quality Naturally</h3>
+                        <p>Tips and techniques to help you get better sleep without relying on medication.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest updates on new products, special offers, and health tips directly to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-prescription-bottle-alt"></i>
+                        <span>MediShop</span>
+                    </div>
+                    <p>Your trusted online pharmacy for all your healthcare needs. We provide authentic medicines and health products at competitive prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Medicines</a></li>
+                        <li><a href="#">Healthcare Devices</a></li>
+                        <li><a href="#">Personal Care</a></li>
+                        <li><a href="#">Vitamins & Supplements</a></li>
+                        <li><a href="#">Baby Care</a></li>
+                        <li><a href="#">Wellness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health Street, Medical District, City</li>
+                        <li><i class="fas fa-phone-alt"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> support@medishop.com</li>
+                    </ul>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MediShop. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
